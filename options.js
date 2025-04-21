@@ -14,9 +14,9 @@ export const regionOptions = {
             ],
 
             [
-                { text: "Qashqadaryo", callback_data: "qashqadaryo" },
-                { text: "Surxondaryo", callback_data: "surxondaryo" },
-                { text: "Sirdaryo", callback_data: "sirdaryo" },
+                { text: "Qarshi", callback_data: "qarshi" },
+                { text: "Urganch", callback_data: "urganch" },
+                { text: "Termiz", callback_data: "termiz" },
             ],
             [
                 { text: "Buxoro", callback_data: "buxoro" },
@@ -30,3 +30,11 @@ export const regionOptions = {
 
     }
 }
+export const namozOption = {
+    reply_markup: {
+      inline_keyboard: [
+       [ { text: "Namoz vaqtlari", callback_data: "/namoz" }]
+      ]  
+    }
+  }
+    
