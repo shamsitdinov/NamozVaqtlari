@@ -29,6 +29,9 @@ export const startBot = () => {
     if (text === 'Namoz vaqtlari') {
       await bot.sendMessage(chatId, "Hududni tanlang", regionOptions)
     }
+    if (!text === 'Namoz vaqtlari') {
+      await bot.sendMessage(chatId, "Tugmadan foydalaning")
+    }
   });
   bot.on('callback_query', async msg => {
     const data = msg.data
