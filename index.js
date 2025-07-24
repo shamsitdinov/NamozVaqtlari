@@ -4,6 +4,10 @@ import {startBot} from './bot/bot.js';
 import 'dotenv/config'
 const app = express() 
    
+app.get("/ping",(req,res)=>{
+    res.send("Bot ishladi !")
+})
+
 startBot()
 
 
