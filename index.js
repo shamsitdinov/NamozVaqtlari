@@ -98,7 +98,7 @@ app.post("/" + TOKEN, (req, res) => {
 });
 
 bot.onText(/\/start/, (msg) => {
-  bot.sendMessage(msg.chat.id, "Salom, Nodirbek! 🚀 Men ishlayapman!");
+  bot.sendMessage(msg.chat.id, "Salom, Tugmalardan foydalanng ! 🚀 ");
 });
 
 app.listen(PORT, () => {
