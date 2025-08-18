@@ -58,7 +58,6 @@
 
 
 import express from 'express';
-import mongoose from 'mongoose';
 import { startBot } from './bot/bot.js';
 import 'dotenv/config';
 import bodyParser from "body-parser";
@@ -79,13 +78,11 @@ app.get("/ping", (req, res) => {
 
 app.use(bodyParser.json());
 
-// Webhook endpoint
 app.post("/" + TOKEN, (req, res) => {
   bot.processUpdate(req.body);
   res.sendStatus(200);
 });
 
-// Misol: /start komandasi
 bot.onText(/\/start/, (msg) => {
   bot.sendMessage(msg.chat.id, "Salom, Nodirbek! 🚀 Men ishlayapman!");
 });
