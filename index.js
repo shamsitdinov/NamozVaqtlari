@@ -98,7 +98,7 @@ app.post("/" + TOKEN, (req, res) => {
 });
 
 bot.onText(/\/start/, (msg) => {
-  bot.sendMessage(msg.chat.id, "Salom, Tugmalardan foydalanng ! 🚀 ");
+  bot.sendMessage(msg.chat.id, "Tugmalardan foydalanng ! 🚀 ");
 });
 
 app.listen(PORT, () => {
