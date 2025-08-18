@@ -3,17 +3,17 @@ import "dotenv/config";
 import { namozOption, regionOptions } from "../options.js";
 import { regionTime } from "../regions/region.js";
 
-const bot = new TelegramBot(process.env.TELEGRAM_TOKEN, { polling: true });
-
-bot.setMyCommands([
-  { command: "/start", description: "Boshlash" },
-]);
 
 
-export const startBot = () => {
+
+export const startBot = (bot) => {
+  bot.setMyCommands([
+    { command: "/start", description: "Boshlash" },
+  ]);
   bot.on("message", async (msg) => {
     const text = msg.text;
     const chatId = msg.chat.id;
+    
 
     const opts = {
       reply_to_message_id: msg.message_id,
