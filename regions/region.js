@@ -6,7 +6,7 @@ export const regionTime = (region, id, bot) => {
                 bot.sendMessage(
                     `${id}`,
                     `         
- ${data.hijri_date.month} da oyining
+ ${data.hijri_date.month}  oyining
  ${data.hijri_date.day} kuni
 
 Viloyat : ${data.region} 
